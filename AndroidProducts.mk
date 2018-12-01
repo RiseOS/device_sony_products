@@ -16,4 +16,5 @@ PRODUCT_MAKEFILES := $(LOCAL_DIR)/ros_loire_suzu.mk \
                      $(LOCAL_DIR)/ros_loire_kugo.mk \
                      $(LOCAL_DIR)/ros_nile_discovery.mk \
                      $(LOCAL_DIR)/ros_nile_pioneer.mk \
-                     $(LOCAL_DIR)/ros_nile_voyager.mk
+                     $(LOCAL_DIR)/ros_nile_voyager.mk \
+                     $(LOCAL_DIR)/ros_yoshino_maple.mk
