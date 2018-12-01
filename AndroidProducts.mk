@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/ros_suzu.mk \
-                     $(LOCAL_DIR)/ros_kugo.mk \
-                     $(LOCAL_DIR)/ros_discovery.mk \
-                     $(LOCAL_DIR)/ros_pioneer.mk \
-                     $(LOCAL_DIR)/ros_voyager.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/ros_loire_suzu.mk \
+                     $(LOCAL_DIR)/ros_loire_kugo.mk \
+                     $(LOCAL_DIR)/ros_nile_discovery.mk \
+                     $(LOCAL_DIR)/ros_nile_pioneer.mk \
+                     $(LOCAL_DIR)/ros_nile_voyager.mk

@@ -12,15 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_loire_kugo_defconfig
+TARGET_KERNEL_CONFIG := aosp_nile_pioneer_defconfig
+
+TARGET_INIT_VENDOR_LIB := libinit_pioneer
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/kugo/device.mk)
+$(call inherit-product, device/sony/pioneer/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := ros_kugo
-PRODUCT_DEVICE := kugo
-PRODUCT_MODEL := Xperia X Compact
+PRODUCT_NAME := ros_nile_pioneer
+PRODUCT_DEVICE := pioneer
+PRODUCT_MODEL := Xperia XA2
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony

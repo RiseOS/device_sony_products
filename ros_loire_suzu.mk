@@ -21,7 +21,7 @@ $(call inherit-product, device/sony/suzu/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := ros_suzu
+PRODUCT_NAME := ros_loire_suzu
 PRODUCT_DEVICE := suzu
 PRODUCT_MODEL := Xperia X
 PRODUCT_BRAND := Sony

@@ -21,7 +21,7 @@ $(call inherit-product, device/sony/discovery/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := ros_discovery
+PRODUCT_NAME := ros_nile_discovery
 PRODUCT_DEVICE := discovery
 PRODUCT_MODEL := Xperia XA2 Ultra
 PRODUCT_BRAND := Sony

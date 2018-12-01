@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_lunch_combo ros_suzu-eng
-add_lunch_combo ros_suzu-userdebug
-add_lunch_combo ros_kugo-eng
-add_lunch_combo ros_kugo-userdebug
-add_lunch_combo ros_discovery-eng
-add_lunch_combo ros_discovery-userdebug
-add_lunch_combo ros_pioneer-eng
-add_lunch_combo ros_pioneer-userdebug
-add_lunch_combo ros_voyager-eng
-add_lunch_combo ros_voyager-userdebug
+add_lunch_combo ros_loire_suzu-eng
+add_lunch_combo ros_loire_suzu-userdebug
+add_lunch_combo ros_loire_kugo-eng
+add_lunch_combo ros_loire_kugo-userdebug
+add_lunch_combo ros_nile_discovery-eng
+add_lunch_combo ros_nile_discovery-userdebug
+add_lunch_combo ros_nile_pioneer-eng
+add_lunch_combo ros_nile_pioneer-userdebug
+add_lunch_combo ros_nile_voyager-eng
+add_lunch_combo ros_nile_voyager-userdebug

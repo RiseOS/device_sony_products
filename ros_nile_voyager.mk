@@ -21,7 +21,7 @@ $(call inherit-product, device/sony/voyager/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := ros_voyager
+PRODUCT_NAME := ros_nile_voyager
 PRODUCT_DEVICE := voyager
 PRODUCT_MODEL := Xperia XA2 Plus
 PRODUCT_BRAND := Sony
