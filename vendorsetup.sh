@@ -16,3 +16,5 @@ add_lunch_combo ros_suzu-eng
 add_lunch_combo ros_suzu-userdebug
 add_lunch_combo ros_kugo-eng
 add_lunch_combo ros_kugo-userdebug
+add_lunch_combo ros_discovery-eng
+add_lunch_combo ros_discovery-userdebug

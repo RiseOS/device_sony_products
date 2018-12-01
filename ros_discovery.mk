@@ -12,6 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/ros_suzu.mk \
-                     $(LOCAL_DIR)/ros_kugo.mk \
-                     $(LOCAL_DIR)/ros_discovery.mk
+TARGET_KERNEL_CONFIG := aosp_nile_discovery_defconfig
+
+TARGET_INIT_VENDOR_LIB := libinit_discovery
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/discovery/device.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_NAME := ros_discovery
+PRODUCT_DEVICE := discovery
+PRODUCT_MODEL := Xperia XA2 Ultra
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony

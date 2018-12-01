@@ -23,3 +23,13 @@ LOCAL_C_INCLUDES := \
     system/core/init
 include $(BUILD_STATIC_LIBRARY)
 endif
+
+ifeq ($(TARGET_INIT_VENDOR_LIB), libinit_discovery)
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := init_discovery.cpp
+LOCAL_MODULE := libinit_discovery
+LOCAL_C_INCLUDES := \
+    system/core/base/include \
+    system/core/init
+include $(BUILD_STATIC_LIBRARY)
+endif
