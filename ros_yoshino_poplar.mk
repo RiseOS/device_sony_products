@@ -12,17 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_lunch_combo ros_loire_suzu-eng
-add_lunch_combo ros_loire_suzu-userdebug
-add_lunch_combo ros_loire_kugo-eng
-add_lunch_combo ros_loire_kugo-userdebug
-add_lunch_combo ros_nile_discovery-eng
-add_lunch_combo ros_nile_discovery-userdebug
-add_lunch_combo ros_nile_pioneer-eng
-add_lunch_combo ros_nile_pioneer-userdebug
-add_lunch_combo ros_nile_voyager-eng
-add_lunch_combo ros_nile_voyager-userdebug
-add_lunch_combo ros_yoshino_maple-eng
-add_lunch_combo ros_yoshino_maple-userdebug
-add_lunch_combo ros_yoshino_poplar-eng
-add_lunch_combo ros_yoshino_poplar-userdebug
+TARGET_KERNEL_CONFIG := aosp_yoshino_poplar_defconfig
+
+TARGET_INIT_VENDOR_LIB := libinit_poplar
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/maple/device.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_NAME := ros_yoshino_poplar
+PRODUCT_DEVICE := poplar
+PRODUCT_MODEL := Xperia XZ1
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
