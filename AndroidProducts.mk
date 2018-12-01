@@ -14,4 +14,5 @@
 
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/ros_suzu.mk \
                      $(LOCAL_DIR)/ros_kugo.mk \
-                     $(LOCAL_DIR)/ros_discovery.mk
+                     $(LOCAL_DIR)/ros_discovery.mk \
+                     $(LOCAL_DIR)/ros_pioneer.mk

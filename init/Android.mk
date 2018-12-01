@@ -33,3 +33,13 @@ LOCAL_C_INCLUDES := \
     system/core/init
 include $(BUILD_STATIC_LIBRARY)
 endif
+
+ifeq ($(TARGET_INIT_VENDOR_LIB), libinit_pioneer)
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := init_pioneer.cpp
+LOCAL_MODULE := libinit_pioneer
+LOCAL_C_INCLUDES := \
+    system/core/base/include \
+    system/core/init
+include $(BUILD_STATIC_LIBRARY)
+endif

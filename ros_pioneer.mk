@@ -12,11 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_lunch_combo ros_suzu-eng
-add_lunch_combo ros_suzu-userdebug
-add_lunch_combo ros_kugo-eng
-add_lunch_combo ros_kugo-userdebug
-add_lunch_combo ros_discovery-eng
-add_lunch_combo ros_discovery-userdebug
-add_lunch_combo ros_pioneer-eng
-add_lunch_combo ros_pioneer-userdebug
+TARGET_KERNEL_CONFIG := aosp_nile_pioneer_defconfig
+
+TARGET_INIT_VENDOR_LIB := libinit_pioneer
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/pioneer/device.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_NAME := ros_pioneer
+PRODUCT_DEVICE := pioneer
+PRODUCT_MODEL := Xperia XA2
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
