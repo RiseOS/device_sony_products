@@ -12,11 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/ros_loire_suzu.mk \
-                     $(LOCAL_DIR)/ros_loire_kugo.mk \
-                     $(LOCAL_DIR)/ros_nile_discovery.mk \
-                     $(LOCAL_DIR)/ros_nile_pioneer.mk \
-                     $(LOCAL_DIR)/ros_nile_voyager.mk \
-                     $(LOCAL_DIR)/ros_yoshino_maple.mk \
-                     $(LOCAL_DIR)/ros_yoshino_poplar.mk \
-                     $(LOCAL_DIR)/ros_yoshino_lilac.mk
+TARGET_KERNEL_CONFIG := aosp_yoshino_lilac_defconfig
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/lilac/device.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_NAME := ros_yoshino_lilac
+PRODUCT_DEVICE := lilac
+PRODUCT_MODEL := Xperia XZ1 Compact
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony

@@ -26,3 +26,5 @@ add_lunch_combo ros_yoshino_maple-eng
 add_lunch_combo ros_yoshino_maple-userdebug
 add_lunch_combo ros_yoshino_poplar-eng
 add_lunch_combo ros_yoshino_poplar-userdebug
+add_lunch_combo ros_yoshino_lilac-eng
+add_lunch_combo ros_yoshino_lilac-userdebug
