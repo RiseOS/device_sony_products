@@ -12,5 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/ros_suzu.mk \
-                     $(LOCAL_DIR)/ros_kugo.mk
+TARGET_KERNEL_CONFIG := aosp_loire_kugo_defconfig
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/kugo/device.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_NAME := ros_kugo
+PRODUCT_DEVICE := kugo
+PRODUCT_MODEL := Xperia X Compact
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
