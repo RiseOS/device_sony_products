@@ -1,4 +1,4 @@
-# Copyright 2018 The Rise OS Project
+# Copyright (C) 2018 The Rise OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,5 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_lunch_combo ros_suzu-eng
-add_lunch_combo ros_suzu-userdebug
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_INIT_VENDOR_LIB), libinit_suzu)
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := init_suzu.cpp
+LOCAL_MODULE := libinit_suzu
+LOCAL_C_INCLUDES := \
+    system/core/base/include \
+    system/core/init
+include $(BUILD_STATIC_LIBRARY)
+endif

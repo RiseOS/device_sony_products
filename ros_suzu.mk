@@ -12,5 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_lunch_combo ros_suzu-eng
-add_lunch_combo ros_suzu-userdebug
+TARGET_KERNEL_CONFIG := aosp_loire_suzu_defconfig
+
+TARGET_INIT_VENDOR_LIB := libinit_suzu
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/suzu/device.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_NAME := ros_suzu
+PRODUCT_DEVICE := suzu
+PRODUCT_MODEL := Xperia X
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
