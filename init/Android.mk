@@ -43,3 +43,13 @@ LOCAL_C_INCLUDES := \
     system/core/init
 include $(BUILD_STATIC_LIBRARY)
 endif
+
+ifeq ($(TARGET_INIT_VENDOR_LIB), libinit_voyager)
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := init_voyager.cpp
+LOCAL_MODULE := libinit_voyager
+LOCAL_C_INCLUDES := \
+    system/core/base/include \
+    system/core/init
+include $(BUILD_STATIC_LIBRARY)
+endif
