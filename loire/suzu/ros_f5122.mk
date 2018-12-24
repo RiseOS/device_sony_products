@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9,1
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/products/ros_f5121.mk)
+$(call inherit-product, device/sony/products/loire/suzu/ros_f5121.mk)
 
 PRODUCT_NAME := ros_f5122
 PRODUCT_DEVICE := suzu

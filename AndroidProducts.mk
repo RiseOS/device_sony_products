@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/ros_f5121.mk \
-                     $(LOCAL_DIR)/ros_f5122.mk \
-                     $(LOCAL_DIR)/ros_f5321.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/loire/suzu/ros_f5121.mk \
+                     $(LOCAL_DIR)/loire/suzu/ros_f5122.mk \
+                     $(LOCAL_DIR)/loire/kugo/ros_f5321.mk
