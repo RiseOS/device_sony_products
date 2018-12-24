@@ -12,11 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/loire/suzu/ros_f5121.mk \
-                     $(LOCAL_DIR)/loire/suzu/ros_f5122.mk \
-                     $(LOCAL_DIR)/loire/kugo/ros_f5321.mk \
-                     $(LOCAL_DIR)/yoshino/maple/ros_g8141.mk \
-                     $(LOCAL_DIR)/yoshino/maple/ros_g8142.mk \
-                     $(LOCAL_DIR)/yoshino/poplar/ros_g8341.mk \
-                     $(LOCAL_DIR)/yoshino/poplar/ros_g8342.mk \
-                     $(LOCAL_DIR)/yoshino/lilac/ros_g8441.mk
+# DualSim
+PRODUCT_DEVICE_DS := true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.multisim.config=dsds \
+    persist.radio.multisim.config=dsds \
+    ro.telephony.default_network=9,1
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/products/yoshino/poplar/ros_g8341.mk)
+
+PRODUCT_NAME := ros_g8342
+PRODUCT_DEVICE := poplar
+PRODUCT_MODEL := Xperia XZ1 Dual
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony

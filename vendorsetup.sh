@@ -12,9 +12,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Loire/Suzu
 add_lunch_combo ros_f5121-eng
 add_lunch_combo ros_f5121-userdebug
 add_lunch_combo ros_f5122-eng
 add_lunch_combo ros_f5122-userdebug
+# Loire/Kugo
 add_lunch_combo ros_f5321-eng
 add_lunch_combo ros_f5321-userdebug
+# Yoshino/Maple
+add_lunch_combo ros_g8141-eng
+add_lunch_combo ros_g8141-userdebug
+add_lunch_combo ros_g8142-eng
+add_lunch_combo ros_g8141-userdebug
+# Yoshino/Poplar
+add_lunch_combo ros_g8341-eng
+add_lunch_combo ros_g8341-userdebug
+add_lunch_combo ros_g8342-eng
+add_lunch_combo ros_g8342-userdebug
+# Yoshino/Lilac
+add_lunch_combo ros_g8441-eng
+add_lunch_combo ros_g8441-userdebug
