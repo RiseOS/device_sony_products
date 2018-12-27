@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 720p
+
 TARGET_KERNEL_CONFIG := aosp_loire_kugo_defconfig
 
 # Inherit from those products. Most specific first.

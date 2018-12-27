@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 1080p
+
 TARGET_KERNEL_CONFIG := aosp_yoshino_poplar_defconfig
 
 # Inherit from those products. Most specific first.
