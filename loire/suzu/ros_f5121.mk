@@ -15,7 +15,7 @@
 # Bootanimation
 TARGET_BOOTANIMATION_SIZE := 1080p
 
-TARGET_KERNEL_CONFIG := aosp_loire_suzu_defconfig
+TARGET_KERNEL_CONFIG := loire_suzu_defconfig
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/suzu/device.mk)
